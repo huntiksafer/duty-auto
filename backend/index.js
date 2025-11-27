@@ -115,3 +115,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`✅ Mock Server running on port ${PORT}`);
   console.log(`📡 Ready to handle requests without MongoDB`);
+});
