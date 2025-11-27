@@ -55,4 +55,8 @@ app.post('/api/auto-plan', (req, res) => {
   res.json({ success: true, count: newDuties.length });
 });
 
-app.listen(5000, () => console.log('Backend: http://localhost:5000'));
+const PORT = process.env.PORT || 5000; // Обязательно используй process.env.PORT
+
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
+});
